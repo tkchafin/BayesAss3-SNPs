@@ -1,3 +1,5 @@
+CC=g++
+CXX=g++
 all : BA3-SNPS
 
 indiv.o : indiv.h indiv.cpp
