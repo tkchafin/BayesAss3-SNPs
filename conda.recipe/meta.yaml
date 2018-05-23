@@ -8,6 +8,9 @@ source:
 
 build:
   skip: True  # [win]
+  rpaths:
+    - lib/
+  binary_relocation: True
 
 CONDA_BUILD_SYSROOT:
   - /opt/MacOSX10.9.sdk        # [osx]
@@ -16,10 +19,12 @@ requirements:
   build:
     - clangxx_osx-64 # [osx]
     - gxx_linux-64 # [linux]
-    - boost
+    - boost=1.65.1
+    - boost-cpp=1.65.1
     - gsl
   run:
-    - boost
+    - boost=1.65.1
+    - boost-cpp=1.65.1
     - gsl
 
 about:
