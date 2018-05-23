@@ -1,0 +1,28 @@
+package:
+  name: bayesass3-snp
+  version: "1.0"
+
+source:
+  git_url: https://github.com/tkchafin/BayesAss3-SNPs.git
+  git_rev: v1.0
+
+build:
+  skip: True  # [win]
+
+CONDA_BUILD_SYSROOT:
+  - /opt/MacOSX10.9.sdk        # [osx]
+
+requirements:
+  build:
+    - gcc
+    - boost
+    - gsl
+
+  run:
+    - boost
+    - gsl
+
+about:
+  home: https://github.com/smussmann82/BayesAss3-SNPs
+  license: GPLv3
+  summary: Modification of BayesAss 3.0.4 to allow handling of large SNP datasets
