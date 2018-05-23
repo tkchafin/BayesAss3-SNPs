@@ -1,9 +1,9 @@
 package:
   name: bayesass3-snp
-  version: "1.0"
+  version: "v1.0"
 
 source:
-  git_url: https://github.com/tkchafin/BayesAss3-SNPs.git
+  git_url: https://github.com/smussmann82/BayesAss3-SNPs.git
   git_rev: v1.0
 
 build:
@@ -14,10 +14,10 @@ CONDA_BUILD_SYSROOT:
 
 requirements:
   build:
-    - gcc
+    - clangxx_osx-64 # [osx]
+    - gxx_linux-64 # [linux]
     - boost
     - gsl
-
   run:
     - boost
     - gsl
