@@ -1,10 +1,10 @@
 package:
   name: bayesass3-snp
-  version: "v1.0"
+  version: "v1.0.0"
 
 source:
   git_url: https://github.com/smussmann82/BayesAss3-SNPs.git
-  git_rev: v1.0
+  git_rev: v1.0.0
 
 build:
   skip: True  # [win]
